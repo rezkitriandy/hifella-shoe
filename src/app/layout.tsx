@@ -1,4 +1,4 @@
-import ReactQueryProvider from '@/providers/ReactQueryProvider';
+import ReactQueryProvider from '@/shared/providers/ReactQueryProvider';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.scss';

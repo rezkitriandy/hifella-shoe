@@ -1,5 +1,9 @@
 # Frontend Dev Guidance
 
+## ENV
+
+- Set env value to .env.local & env.mjs, use env value from env.mjs
+
 ## Installation
 
 Use the node package manager (npm) to install dependencies.
@@ -7,8 +11,6 @@ Use the node package manager (npm) to install dependencies.
 ```bash
 npm install
 ```
-
-Set .env
 
 ## Run Local Dev Server
 
@@ -55,10 +57,67 @@ npm run dev
 
 ## Git Branching
 
+[Git Flow](https://excalidraw.com/#json=DcAYfKEcHB8h1AWkb4OhH,1LGUFd14mYMF09UyN9oawA)
+
 - Feature (Create from Develop) → feature/<short-description> → feature/ticket-checkout
 - Hotfix (Create from Main) → hotfix/<short-description> → hotfix/login-button
 - Hotfix Version (Create from Main) → hotfix/<version> → hotfix/1.0.1
 - Release (Create from Develop) → release/<version> → release/1.5.0
+
+## Commit Messages
+
+Format: <type>: description
+
+##### Types
+
+- feat → Introduce a new feature to the codebase
+- fix → Fix a bug/issue in the codebase
+- chore → Regular code maintenance
+- docs → Create/update documentation
+
+## VS Code
+
+- Set env value to .env.local & env.mjs, use env value from env.mjs
+- Please install eslint & prettier on your VS Code
+
+##### VS Code Settings
+
+```bash
+{
+  "editor.fontSize": 12,
+  "editor.wordWrap": "on",
+  "extensions.autoUpdate": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.confirmSync": false,
+  "eslint.validate": ["javascript", "typescript"],
+  "eslint.format.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "files.eol": "\n"
+}
+
+```
 
 ## License
 
